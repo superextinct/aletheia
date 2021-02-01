@@ -1,0 +1,58 @@
+@import "_variables";
+
+.interaction {
+    margin: $margin;
+    display: flex;
+    background: #a2a2ab;
+}
+
+.video {
+    width: 50%;
+}
+
+.aside {
+    width: 50%;
+    color: $accent;
+    background: #fff;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: 3rem;
+            border-bottom: 1px solid $light;
+            font-size: 1.25rem;
+            cursor: pointer;
+
+            p {
+                transition: all ease .3s;
+            }
+
+            p + p {
+                font-size: 1rem;
+                color: $gray;
+                margin: 0 0 0 3rem;
+                overflow: hidden;
+                max-height: 200px;
+            }
+
+            &[aria-expanded="false"] {
+                p {
+                    margin-bottom: 0;
+                }
+
+                p + p {
+                    max-height: 0;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    svg {
+        vertical-align: middle;
+        margin: -0.2rem 1rem 0 0;
+    }
+}

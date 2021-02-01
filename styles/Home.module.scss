@@ -1,0 +1,125 @@
+@import "_variables";
+@import "Page.module";
+
+.container {
+  background: $primary;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.pane {
+  width: 100vw;
+  min-height: calc(100vh - #{$margin} - #{$margin});
+  position: relative;
+  padding: $margin;
+  overflow: hidden;
+}
+
+.title {
+  font: 600 8rem/1.2 Poppins, sans-serif;
+  color: $text;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  background-color: #333;
+  position: relative;
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s .4s;
+  max-height: 75vh;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    object-fit: cover;
+    transition: opacity ease .3s;
+  }
+
+  .inner {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity ease .3s, transform cubic-bezier(0.215, 0.610, 0.355, 1) .6s;
+  }
+
+  .close {
+    position: absolute;
+    top: $margin;
+    right: $margin;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity ease .2s;
+  }
+
+  &[data-playing="true"] {
+    margin: calc(#{$margin} * -1);
+    max-height: 100vh;
+    height: 100vh;
+    
+    video {
+      opacity: 1;
+    }
+
+    .inner {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+
+    .close {
+      opacity: 1;
+      transition-delay: .6s;
+    }
+  }
+}
+
+.teaser {
+  font: 500 2rem/1.2 Poppins, sans-serif;
+  color: #fff;
+}
+
+.text {
+  // margin: 4rem 0;
+  // color: $gray;
+  // @media (min-width: $md) {
+  //   max-width: 880px;
+  //   margin: 6rem auto;
+  // }
+
+  // display: flex;
+  // padding: $margin;
+  
+
+  // h1 {
+  //   width: 55%;
+  // }
+
+  // p {
+  //   width: 50%;
+  //   // padding-left: 40px;
+  // }
+}
+
+.columns {
+  column-count: 2;
+  column-gap: 20px;
+}

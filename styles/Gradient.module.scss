@@ -1,0 +1,136 @@
+@import "_variables";
+
+$duration: 4;
+
+.wrapper {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 480px;
+    height: 480px;
+    margin: -240px 0 0 -240px;
+    animation: rotate 12s linear infinite;
+    transform-style: preserve-3d;
+    will-change: transform;
+    pointer-events: none;
+    
+    @if $primary == $dark {
+        filter: invert(1) blur(50px);
+    } @else {
+        filter: blur(50px);
+    }
+
+    footer & {
+        position: absolute;
+        left: 50%;
+        bottom: -240px;
+        margin-top: 0;
+        animation: none;
+        transform: scaleX(2);
+        opacity: 0.5;
+    }
+}
+
+.wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    user-select: none;
+}
+
+// .gradient4,
+// .gradient3,
+// .gradient2,
+// .gradient1 {
+//     animation: fadeInOut #{$duration}s linear infinite;
+// }
+
+// .gradient4 {
+//     animation-delay: #{$duration + $duration * 0.6}s;
+// }
+
+// .gradient3 {
+//     animation-delay: #{$duration - $duration * 0.6}s;
+// }
+
+// .gradient2 {
+//     animation-delay: #{$duration * 2 - $duration * 0.6}s;
+// }
+
+// .gradient1 {
+//     animation-delay: #{$duration * 3 - $duration * 0.6}s;
+// }
+
+.gradient1 {
+    animation: gradient #{$duration * 4}s linear infinite;
+}
+
+.gradient2 {
+    animation: gradient #{$duration * 4}s linear infinite;
+    animation-delay: #{$duration}s;
+}
+
+.gradient3 {
+    animation: gradient #{$duration * 4}s linear infinite;
+    animation-delay: #{$duration * 2}s;
+}
+
+.gradient4 {
+    animation: gradient #{$duration * 4}s linear infinite;
+    animation-delay: #{$duration * 3}s;
+}
+
+@keyframes gradient {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes gradient2 {
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
