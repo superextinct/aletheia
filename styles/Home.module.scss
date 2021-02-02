@@ -97,29 +97,44 @@
   color: #fff;
 }
 
-.text {
-  // margin: 4rem 0;
-  // color: $gray;
-  // @media (min-width: $md) {
-  //   max-width: 880px;
-  //   margin: 6rem auto;
-  // }
-
-  // display: flex;
-  // padding: $margin;
-  
-
-  // h1 {
-  //   width: 55%;
-  // }
-
-  // p {
-  //   width: 50%;
-  //   // padding-left: 40px;
-  // }
-}
-
 .columns {
   column-count: 2;
   column-gap: 20px;
+}
+
+.jobs {
+  h1 {
+    width: 40%;
+    float: left;
+  }
+
+  ul {
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0px 50px 85px -70px rgba($accent,0.5);
+  }
+
+  li {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid $light;
+    cursor: pointer;
+    color: $accent;
+    background: #fff;
+    font-size: 1.25rem;
+  }
+
+  svg {
+    vertical-align: middle;
+    float: right;
+  }
+}
+
+
+.paneHAuto {
+  padding: $margin;
+  margin-bottom: 6vw;
+  width: 100%;
 }

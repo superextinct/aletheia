@@ -251,8 +251,27 @@ class Home extends Component {
             </div>
           </div>
 
-          <div className={styles.pane} id="jobs">
+          <div className={styles.paneHAuto}>
             <h3>Careers at Aletheia</h3>
+            <div className={styles.jobs}>
+              <h1>
+                Join our family of passionate people.
+              </h1>
+              <ul>
+                <li>
+                  Product Ambassador
+                  <Icons.ArrowRight size={36}/>
+                </li>
+                <li>
+                  Consultant Information Security &amp; Privacy 
+                  <Icons.ArrowRight size={36}/>
+                </li>
+                <li>
+                  Senior Data Scientist
+                  <Icons.ArrowRight size={36}/>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className={styles.getInTouch}>

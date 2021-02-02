@@ -87,6 +87,7 @@ h2,
 h3 {
   font-weight: 400;
   margin-top: 0;
+  color: $accent;
 }
 
 h1 {
@@ -98,13 +99,11 @@ h1 {
 h2 {
   font-size: 2rem;
   line-height: 1.1;
-  color: $accent;
 }
 
 h3 {
   font-size: 1rem;
   // border-bottom: 2px solid $text;
-  color: $accent;
   padding-bottom: 0.2rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
