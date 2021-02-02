@@ -52,8 +52,7 @@ function Business() {
                 <div className="grid-2">
                     <div className="col text">
                         <h1>Great Company</h1>
-                        <p>Bring your remote workers right back into the office: Aletheia Impulse works well together.</p>
-                        <p>We know how important company culture is to you and your business, and we've made it our mission to help you address the challenges of remote employees. All for the sole reason of increasing your attractiveness as an employer. So are you ready to differentiate yourself from your competitors by setting new standards?</p>
+                        <p>Bring your remote workers right back into the office: Aletheia Impulse works well together. We know how important company culture is to you and your business, and we've made it our mission to help you address the challenges of remote employees. All for the sole reason of increasing your attractiveness as an employer. So are you ready to differentiate yourself from your competitors by setting new standards?</p>
                     </div>
                     <div className="col">
                         <img src="/images/business.jpg" />
