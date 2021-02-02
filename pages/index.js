@@ -255,7 +255,7 @@ class Home extends Component {
             <h3>Careers at Aletheia</h3>
             <div className={styles.jobs}>
               <h1>
-                Join our family of passionate people.
+                Join our family of passionate people
               </h1>
               <ul>
                 <li>

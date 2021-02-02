@@ -101,7 +101,7 @@ class Vision extends React.Component {
                                 </div>
                                 <div aria-expanded={this.state.accordionFocus == 2}>
                                     <div>
-                                        <h4>Capture your emotions through AI</h4>
+                                        <h4>Capture your emotions through Emotive Intelligence</h4>
                                         <p>Our intelligent software will track your emotions with your permission. The longer you and your team will use Aletheia, the better she will understand your individual needs.</p>
                                     </div>
                                     <div>
@@ -183,10 +183,12 @@ class Vision extends React.Component {
                         <h1>A remote yet<br/>near future.</h1>
                         <img src="/icons/future.svg" />
                         <p>
-                        What differentiates the living from the nonliving? What is life? These are perennial questions that have occupied minds since the beginning of cultures. The search for a clear demarcation between animate and inanimate is a reflection of the human tendency to create borders, not only physical but also conceptual. It is obvious that what we call a living creature, either bacteria or organism, has distinct properties from those of the normally called nonliving. However, searching beyond dichotomies and from a global, more abstract, perspective on natural laws, a clear partition of matter into animate and inanimate becomes fuzzy. 
+                            What differentiates the living from the nonliving? What is life? These are perennial questions that have occupied minds since the beginning of cultures. The search for a clear demarcation between animate and inanimate is a reflection of the human tendency to create borders, not only physical but also conceptual. 
                         </p>
-                    </section>
 
+                        <p>
+                            With artificial intelligence on the rise and an increasingly virtual habitat, Aletheia has made it its mission to search beyond dichotomies and explore the fuzzy border between animate and inanimate matter.
+                        </p>
 
                     <div className={styles.iconGrid}>
                         <div>
