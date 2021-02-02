@@ -17,6 +17,10 @@
         transform: translateX(-50%);
     }
 
+    h1 {
+        color: #fff;
+    }
+
     img {
         object-fit: cover;
     }
@@ -75,8 +79,10 @@
 }
 
 .getInTouch {
-    padding: $margin;
+    padding: $margin $margin 8vw;
     width: 100%;
+    background: url(/images/packaging.jpg) right center no-repeat;
+    background-size: contain;
 
     h1 {
         color: $accent;

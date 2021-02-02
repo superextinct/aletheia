@@ -121,43 +121,7 @@ class Vision extends React.Component {
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div className={styles.inlineIcons}>
-                            <div>
-                                <img src="/icons/ai.png" />
-                                <h2>Affective Computing</h2>
-                                <p>Harnessing the power of affective computing.</p>
-                            </div>
-                            
-                            <div>
-                                <img src="/icons/emotion.png" />
-                                <h2>Emotive cognition</h2>
-                                <p></p>
-                            </div>
-
-                            <div>
-                                <img src="/icons/ai.png" />
-                                <h2>Affective Computing</h2>
-                                <p>Harnessing the power of affective computing.</p>
-                            </div>
-                            
-                            <div>
-                                <img src="/icons/emotion.png" />
-                                <h2>Emotive cognition</h2>
-                                <p></p>
-                            </div>
-                        </div> */}
                     </section>
-
-
-                    {/* <div className="grid-2">
-                        <div className="col">
-                            <img src="/images/future.jpg" />
-                        </div>
-                        <div className="col text">
-
-                        </div>
-                    </div> */}
 
                     <div className={styles.iconGrid}>
                         <div>
@@ -190,38 +154,34 @@ class Vision extends React.Component {
                             With artificial intelligence on the rise and an increasingly virtual habitat, Aletheia has made it its mission to search beyond dichotomies and explore the fuzzy border between animate and inanimate matter.
                         </p>
 
-                    <div className={styles.iconGrid}>
-                        <div>
-                            <img src="/icons/ai.png" />
-                            <h2>Affective Computing</h2>
-                            <p>Harnessing the power of affective computing.</p>
-                        </div>
-                        
-                        <div>
-                            <img src="/icons/emotion.png" />
-                            <h2>Emotive cognition</h2>
-                            <p></p>
-                        </div>
-
-                        <div>
-                            <img src="/icons/ai.png" />
-                            <h2>Affective Computing</h2>
-                            <p>Harnessing the power of affective computing.</p>
-                        </div>
-                    </div>
-
-                    <picture>
-                        <source srcSet="/images/rendering.webp" type="image/webp" />
-                        <source srcSet="/images/rendering.jpg" type="image/jpeg" />
-                        <img src="/images/rendering.jpg" />
-                    </picture>
-
-                    <div className={home.pane}>
-                        <h1 className={styles.big}>Aletheia Impulse</h1>
-                        <p className={home.teaser}>
-                            Restrained design with strong impact
+                        <p>
+                            <button className="button">
+                                Join the cause
+                            </button>
                         </p>
+                    </section>
+
+                    <div className="grid-2">
+                        <div className="col text">
+                            <h1>Restrained design with strong impact.</h1>
+                            <p>
+                                Staying in touch has never looked this good: Aletheia Impulse is designed as an extension of your desk, you can also mount it on a wall for an even subtler integration. The visual reproduction of emotions through radiating light impulses have a calming effect while still being highly effective.
+                            </p>
+                        </div>
+                        <div className="col">
+                            <video autoPlay={true} muted={true} playsInline={true} disableRemotePlayback={true}>
+                                <source src="/videos/desk.mp4" type="video/mp4" />
+                            </video>
+                        </div>
                     </div>
+                    
+                    {/* <div className={home.pane}>
+                        <picture>
+                            <source srcSet="/images/rendering.webp" type="image/webp" />
+                            <source srcSet="/images/rendering.jpg" type="image/jpeg" />
+                            <img src="/images/rendering.jpg" />
+                        </picture>
+                    </div> */}
 
                     <div className={vision.interaction}>
                         <video className={vision.video} loop={true} autoPlay={true} playsInline={true} muted={true} disableRemotePlayback={true} ref={this.interactionVideo} onTimeUpdate={this.timeUpdate}>
@@ -239,6 +199,10 @@ class Vision extends React.Component {
                                         <Icons.Square size={36} />
                                         Joining
                                     </p>
+
+                                    <p>
+                                        Let others know you’re there simply by tapping on the surface. Emotion recognition is now active.
+                                    </p>
                                 </li>
                                 <li
                                     aria-expanded={this.state.interactionFocus == 2}
@@ -250,7 +214,7 @@ class Vision extends React.Component {
                                     </p>
                                     
                                     <p>
-                                        Switch to an overview of all spaces by pinching outwards. 
+                                        Switch to an overview of all spaces by pinching inwards. To focus on a space, simply tap on it.
                                     </p>
                                 </li>
                                 <li
@@ -261,9 +225,17 @@ class Vision extends React.Component {
                                         <Icons.Circle size={36} />
                                         Interaction
                                     </p>
+
+                                    <p>
+                                        Be even more expressive: Swipe your finger to make yourself seen and gain attention.
+                                    </p>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <div className={styles.packaging}>
+
                     </div>
 
                     <div className={styles.getInTouch}>

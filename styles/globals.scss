@@ -207,6 +207,7 @@ p {
 
 .footer {
   position: relative;
+  margin-top: -15vh;
   min-height: 30vh;
   overflow: hidden;
   color: $gray;
@@ -273,13 +274,14 @@ section {
 }
 
 .grid-2 {
-  height: calc(100vh - #{$margin} - #{$margin});
+  min-height: calc(100vh - #{$margin} - #{$margin});
   background-color: #fff;
   color: $gray;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 50% 50%;
   margin: $margin;
+  width: calc(100vw - #{$margin} - #{$margin});
   box-shadow: 0px 50px 85px -70px rgba($accent,0.5);
 
   h1, h2, h3 {
@@ -288,6 +290,7 @@ section {
 
   .col {
     overflow: hidden;
+    position: relative;
   }
 
   .col.text {
@@ -300,10 +303,22 @@ section {
     height: auto;
     min-width: 100%;
     min-height: 100%;
+    max-height: calc(100vh - #{$margin} - #{$margin});
     // position: absolute;
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
+  }
+
+  video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 20%;
+    left: 5%;
+    transform: translate(-50%, -50%);
   }
 }
 
