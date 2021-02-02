@@ -60,6 +60,45 @@ function Vision() {
                     <img src="/svg/data.svg" />
                 </section>
 
+                <div className={home.pane}>
+                    <h3>What others are saying</h3>
+                    <div className={styles.testimonial}>
+                        <blockquote>
+                            <p>“If we had had the system from the Aletheia company during the crisis, many things would have been better.”</p>
+                        </blockquote>
+
+                        <div className={styles.block}>
+                            <img src="/images/person3.jpg" alt="Katerina D." />
+                            <aside>
+                                <h4>Katerina D.</h4>
+                                <p>
+                                    Minister of Education
+                                </p>
+                            </aside>
+
+                            <p>In our history, there have been few moments that have impacted the field of education on a national level as much as the Covid 19 crisis a few years ago. We learned a lot after that, but I have to admit that it's companies like Aletheia that are making the difference today. The use of emotional level in homeschool programs has had a tremendous impact on the quality of learning. You just have to look at the numbers over the last few years.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.testimonial}>
+                        <blockquote>
+                            <p>“It's so much easier now to understand my students' needs and improve the way I teach.”</p>
+                        </blockquote>
+
+                        <div className={styles.block}>
+                            <img src="/images/person4.jpg" alt="Eric L." />
+                            <aside>
+                                <h4>Eric L.</h4>
+                                <p>
+                                    Professor at Cornell University, Ithaca
+                                </p>
+                            </aside>
+
+                            <p>In recent years, we've been getting more and more distance students, which has made it harder for me as a professor to interact with them. Since Cornell University implemented the new Aletheia system for faculty and students, things have really changed. I have never had so much insight into my students' behavior, which gives me the opportunity to improve as a teacher.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div className={styles.getInTouch}>
                     <h1>
                         Get started using Aletheia<br/>

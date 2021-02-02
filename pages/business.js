@@ -62,6 +62,42 @@ function Business() {
 
                 <div className={home.pane}>
                     <h3>What others are saying</h3>
+                    <div className={styles.testimonial}>
+                        <blockquote>
+                            <p>“We would have never thought that something so simple has such a big impact on the way people work together.”</p>
+                        </blockquote>
+
+                        <div className={styles.block}>
+                            <img src="/images/person1.jpg" alt="Sebastian B." />
+                            <aside>
+                                <h4>Sebastian B.</h4>
+                                <p>
+                                    Head of HR
+                                    Global Tier-One Supplier
+                                </p>
+                            </aside>
+
+                            <p>In the last 30 years in the field of HR I have already seen a lot of different tools to increase the work situation working in intercultural teams. Most of the products did not bring the result they promised. Aletheia blew our minds when we first tried it and I am glad we got the chance to be one of the first companies to use this awesome system. It really makes a difference in they way our employees work together, you can literally feel it.</p>
+                        </div>
+                    </div>
+
+                    <div className={styles.testimonial}>
+                        <blockquote>
+                            <p>“Finding the right people with the needed skillset would be almost impossible without Aletheia.”</p>
+                        </blockquote>
+
+                        <div className={styles.block}>
+                            <img src="/images/person2.jpg" alt="Rachel F." />
+                            <aside>
+                                <h4>Rachel F.</h4>
+                                <p>
+                                    CEO and Founder Start-Up Fem Tech
+                                </p>
+                            </aside>
+
+                            <p>What do you have to offer as a new player in the market of Fem Tech? That‘s probably the hardest question to answer because there are so many companies in the whole Tech Industry to choose from. Me as a founder I am very happy, that we can easily offer remote contracts and still have a strong family feeling. Aletheia really makes difference here and I think thats why people in the industry see us as an attractive employer.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div className={styles.getInTouch}>
