@@ -20,20 +20,6 @@ class Intro extends Component{
     componentDidMount() {
         console.log(this);
         document.body.style.overflow = "hidden";
-
-        window.setTimeout(() => {
-            this.setState({activePane: 1});
-        }, 2000);
-
-        window.setTimeout(() => {
-            this.setState({activePane: 2});
-        }, 5000);
-
-
-        window.setTimeout(() => {
-            this.setState({activePane: 3, showing: false});
-            this.stopCallback();
-        }, 10000);
     }
 
     componentWillUnmount()  {
@@ -41,10 +27,25 @@ class Intro extends Component{
         document.body.style.overflow = "visible";
     }
 
+    startInto = () => {
+        this.setState({
+            activePane: 1
+        });
+
+        window.setTimeout(() => {
+            this.setState({activePane: 2});
+        }, 5000);
+
+        window.setTimeout(() => {
+            this.setState({activePane: 3, showing: false});
+            this.stopCallback();
+        }, 10000);
+    }
+
     render() {
         return (
             <div className={styles.wrapper} data-pane={this.state.activePane}>
-                <div className={styles.pane}>
+                <div className={styles.pane} onClick={this.startInto}>
                     <div>
                         <h1>We’d like to see<br/>your beautiful face. </h1>
                         <p>Please grant access to your camera.<br/>We won’t store anything – pinky promise.</p>

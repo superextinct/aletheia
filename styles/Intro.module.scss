@@ -51,7 +51,6 @@
 }
 
 
-
 .circle {
     display: block;
     height: 3rem;
@@ -95,11 +94,6 @@
     width: 70vw;
     height: auto;
     z-index: -1;
-    visibility: hidden;
-
-    [data-pane="1"] & {
-        animation: showVideo linear 2s 1s;
-    }
 }
 
 @keyframes showVideo {
