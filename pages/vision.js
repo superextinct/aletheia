@@ -38,7 +38,7 @@ class Vision extends React.Component {
             <div className={home.container}>
                 <Head>
                     <title>Aletheia — Vision</title>
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="favicon.ico" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
                 </Head>
@@ -46,8 +46,8 @@ class Vision extends React.Component {
                 <main className={home.main}>
                     <div className={styles.hero}>
                         <video loop={true} muted={true} playsInline={true} autoPlay={true} disableRemotePlayback={true} onPlay={this.changePlaybackRate} ref={this.video} style={{mixBlendMode: "luminosity"}}>
-                            <source src="/videos/portraits_alternating.webm" type="video/webm" />
-                            <source src="/videos/portraits_alternating.mp4" type="video/mp4" />
+                            <source src="videos/portraits_alternating.webm" type="video/webm" />
+                            <source src="videos/portraits_alternating.mp4" type="video/mp4" />
                         </video>
                         <h1 className={styles.title}>
                             We believe in the power of emotion.
@@ -125,19 +125,19 @@ class Vision extends React.Component {
 
                     <div className={styles.iconGrid}>
                         <div>
-                            <img src="/icons/ai.png" />
+                            <img src="icons/ai.png" />
                             <h2>Power of AI</h2>
                             <p>Harnessing the power of affective computing for a better understanding in a remote world.</p>
                         </div>
                         
                         <div>
-                            <img src="/icons/emotion.png" />
+                            <img src="icons/emotion.png" />
                             <h2>Expressiveness</h2>
                             <p>Striving for emotional understanding in communication, giving everyone a voice.</p>
                         </div>
 
                         <div>
-                            <img src="/icons/cooperative.png" />
+                            <img src="icons/cooperative.png" />
                             <h2>Cooperation</h2>
                             <p>As social individuals, humans excel in a group setting. Aletheia has cooperation built-in.</p>
                         </div>
@@ -145,7 +145,7 @@ class Vision extends React.Component {
 
                     <section>
                         <h1>A remote yet<br/>near future.</h1>
-                        <img src="/icons/future.svg" />
+                        <img src="icons/future.svg" />
                         <p>
                             What differentiates the living from the nonliving? What is life? These are perennial questions that have occupied minds since the beginning of cultures. The search for a clear demarcation between animate and inanimate is a reflection of the human tendency to create borders, not only physical but also conceptual. 
                         </p>
@@ -170,23 +170,15 @@ class Vision extends React.Component {
                         </div>
                         <div className="col">
                             <video autoPlay={true} muted={true} playsInline={true} disableRemotePlayback={true}>
-                                <source src="/videos/desk.mp4" type="video/mp4" />
+                                <source src="videos/desk.mp4" type="video/mp4" />
                             </video>
                         </div>
                     </div>
-                    
-                    {/* <div className={home.pane}>
-                        <picture>
-                            <source srcSet="/images/rendering.webp" type="image/webp" />
-                            <source srcSet="/images/rendering.jpg" type="image/jpeg" />
-                            <img src="/images/rendering.jpg" />
-                        </picture>
-                    </div> */}
 
                     <div className={vision.interaction}>
                         <video className={vision.video} loop={true} autoPlay={true} playsInline={true} muted={true} disableRemotePlayback={true} ref={this.interactionVideo} onTimeUpdate={this.timeUpdate}>
-                            <source src="/videos/interaction.webm" type="video/webm" />
-                            <source src="/videos/interaction.mp4" type="video/mp4" />
+                            <source src="videos/interaction.webm" type="video/webm" />
+                            <source src="videos/interaction.mp4" type="video/mp4" />
                         </video>
                         <div className={vision.aside}>
                             <h1>Smart Touch</h1>

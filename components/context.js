@@ -3,7 +3,7 @@ export const Context = React.createContext();
 
 export class Provider extends React.Component {
     state = {
-        intro: true
+        intro: false
     }
 
     render() {

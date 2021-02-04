@@ -8,7 +8,7 @@ function Vision() {
         <div className={home.container}>
             <Head>
                 <title>Aletheia for Educators</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="favicon.ico" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
             </Head>
@@ -16,8 +16,7 @@ function Vision() {
             <main className={home.main}>
                 <div className={styles.hero}>
                     <video loop={true} muted={true} playsInline={true} autoPlay={true} disableRemotePlayback={true} style={{mixBlendMode: "multiply"}}>
-                        <source src="/videos/education.webm" type="video/webm" />
-                        <source src="/videos/education.mp4" type="video/mp4" />
+                        <source src="videos/education.mp4" type="video/mp4" />
                     </video>
                     <h1 className={styles.title}>
                         Education reimagined. 
@@ -31,17 +30,17 @@ function Vision() {
 
                 <div className={styles.iconGrid}>
                     <div>
-                        <img src="/icons/avatar.png" />
+                        <img src="icons/avatar.png" />
                         <h2>Unobstrive</h2>
                         <p>Video meetings can feel quite obstrusive for students. Aletheia allows for active participation without privacy instrusion.</p>
                     </div>
                     <div>
-                        <img src="/icons/energy.png" />
+                        <img src="icons/energy.png" />
                         <h2>Observant</h2>
                         <p>Am I being understood? With Aletheia, you always know if your students can follow you along.</p>
                     </div>
                     <div>
-                        <img src="/icons/creativity.png" />
+                        <img src="icons/creativity.png" />
                         <h2>Stress-free</h2>
                         <p>By sharing the emotional state, Aletheia will help you lower the stress level for you and your students.</p>
                     </div>
@@ -49,7 +48,7 @@ function Vision() {
 
                 <section>
                     <h1>Plays well<br/>with others.</h1>
-                    <img src="/images/education_apps.png" />
+                    <img src="images/education_apps.png" />
                     <p>We know that you have already found the perfect working tools for you. That's why Aletheia integrates perfectly into your toolset and beyond that into your individual workflow.</p>
                     <p>No matter what video conferencing software you use or if you want to integrate Aletheia into your weekly schedule. Because we believe that your needs are the most important thing to take care of.</p>
                 </section>
@@ -57,7 +56,7 @@ function Vision() {
                 <section>
                     <h1>Who‘s paying attention now?</h1>
                     <p className={styles.left}>Aletheia not only provides an in-depth look at the situation at hand, but also lets educators review sessions. With a detailed overview of session progress, you get the chance to maximize the quality of your teaching and better meet the individual needs of your students.</p>
-                    <img src="/svg/data.svg" />
+                    <img src="svg/data.svg" />
                 </section>
 
                 <div className={home.pane}>
@@ -68,7 +67,7 @@ function Vision() {
                         </blockquote>
 
                         <div className={styles.block}>
-                            <img src="/images/person3.jpg" alt="Katerina D." />
+                            <img src="images/person3.jpg" alt="Katerina D." />
                             <aside>
                                 <h4>Katerina D.</h4>
                                 <p>
@@ -86,7 +85,7 @@ function Vision() {
                         </blockquote>
 
                         <div className={styles.block}>
-                            <img src="/images/person4.jpg" alt="Eric L." />
+                            <img src="images/person4.jpg" alt="Eric L." />
                             <aside>
                                 <h4>Eric L.</h4>
                                 <p>

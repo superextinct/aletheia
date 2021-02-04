@@ -1,13 +1,9 @@
 import React, { Component } from "react"
 import Head from "next/head"
-import Link from "next/link";
 import * as Icons from "react-feather"
 import { Context } from "../components/context"
-import AbstractFace from "../components/AbstractFace"
 import Gradient from "../components/Gradient"
 import Intro from "../components/Intro"
-import Navigation from "../components/Navigation"
-// import Webcam from "../components/Webcam"
 import styles from "../styles/Home.module.scss"
 
 class Home extends Component {
@@ -78,7 +74,7 @@ class Home extends Component {
       <div className={styles.container} data-video={this.state.videoPlaying}>
         <Head>
           <title>Aletheia</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
         </Head>
@@ -105,9 +101,9 @@ class Home extends Component {
 
           <div className={styles.pane} ref={this.videoEl}>
             <div className={styles.video} data-playing={this.state.videoPlaying}>
-              <video autoPlay={false} playsInline={true} poster="/images/rendering-2.png">
-                <source src="/videos/explainer.webm" type="video/webm" />
-                <source src="/videos/explainer.mp4" type="video/mp4" />
+              <video autoPlay={false} playsInline={true} poster="images/rendering-2.png">
+                <source src="videos/explainer.webm" type="video/webm" />
+                <source src="videos/explainer.mp4" type="video/mp4" />
               </video>
               <div className={styles.inner}>
                 <p className={styles.teaser}>
@@ -129,37 +125,23 @@ class Home extends Component {
             <h1>Empowering human communication in the digital age.</h1>
             <p>Communication has become an important part of life. In digital communication however, the subtleties of human interaction are often being omitted. The world is changing so fast and it seems like we humans have lost our ability to connect with people.  Our product helps you in understanding each other.  We believe in the power of raw emotions that connects people and organisations.</p>
             <p>
-              <Link href="/vision">
-                <a className="button">
-                  Explore our vision
-                </a>
-              </Link>
+              <a className="button" href="vision.html">
+                Explore our vision
+              </a>
             </p>
           </section>
 
-          {/* <div className="imgcol">
-            <div className="img">
-              <img src="/images/business.jpg" />
-            </div>
-            <div className="text">
-            <h1>Bridging the Remote Work Gap</h1>
-              <p>When working remotely still feels like being at the office.</p>
-            </div>
-          </div> */}
-
           <div className="grid-2">
             <div className="col">
-              <img src="/images/business.jpg"/>
+              <img src="images/business.jpg"/>
             </div>
             <div className="col text">
               <h1>Bridging the Remote Work Gap</h1>
               <p>When working remotely still feels like being in the office: Aletheia acts as a link between you and your employees by bridging the gap between office and remote work. Lead your organization in new and flexible ways.</p>
 
-              <Link href="/business">
-                <a className="button">
+                <a className="button" href="business.html">
                   Learn more
                 </a>
-              </Link>
             </div>
           </div>
 
@@ -168,27 +150,25 @@ class Home extends Component {
               <h1>Education the 21st-century way</h1>
               <p>The places of learning have changed substantially, and so has the way we learn. With teaching staff facing the difficulties of distance learning, Aletheia provides a way to better understand your students on an emotional level, making education feel humane again.</p>
 
-              <Link href="/education">
-                <a className="button">
-                  Learn more
-                </a>
-              </Link>
+              <a className="button" href="education.html">
+                Learn more
+              </a>
             </div>
             <div className="col">
-              <img src="/images/education.jpg" />
+              <img src="images/education.jpg" />
             </div>
           </div>
 
           <div className="grid-2">
             <div className="col">
-              <img src="/images/home.jpg" />
+              <img src="images/home.jpg" />
             </div>
 
             <div className="col text">
               <h1>Coming soon: Aletheia for Families</h1>
               <p>We’re happy to announce a new product line for strong-knit families: Staying in touch has never been this easy. Not only knowing <i>where</i> but <i>how</i> your kids are – anytime.</p>
 
-              <a className="button">
+              <a className="button" href="#">
                 Get notified
               </a>
 
@@ -294,20 +274,3 @@ class Home extends Component {
 }
 
 export default Home
-
-// export default function Home() {
-//   return (
-//     <div className={styles.container}>
-//       <Head>
-//         <title>Create Next App</title>
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-
-
-//       <main className={styles.main}>
-//         <Webcam ref=
-//         <AbstractFace />
-//       </main>
-//     </div>
-//   )
-// }

@@ -8,7 +8,7 @@ function Business() {
         <div className={home.container}>
             <Head>
                 <title>Aletheia for Businesses</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="favicon.ico" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
             </Head>
@@ -16,8 +16,8 @@ function Business() {
             <main className={home.main}>
                 <div className={styles.hero}>
                     <video loop={true} muted={true} playsInline={true} autoPlay={true} disableRemotePlayback={true} style={{mixBlendMode: "multiply"}}>
-                        <source src="/videos/impulse.webm" type="video/webm" />
-                        <source src="/videos/impulse.mp4" type="video/mp4" />
+                        <source src="videos/impulse.webm" type="video/webm" />
+                        <source src="videos/impulse.mp4" type="video/mp4" />
                     </video>
                     <h1 className={styles.title}>
                         Smells Like Team Spirit. 
@@ -31,19 +31,19 @@ function Business() {
 
                 <div className={styles.iconGrid}>
                     <div>
-                        <img src="/icons/meeting.png" />
+                        <img src="icons/meeting.png" />
                         <h2>Clear</h2>
                         <p>Stop beating around the bush — fosters honest communication that get’s straight to the point.</p>
                     </div>
 
                     <div>
-                        <img src="/icons/team.png" />
+                        <img src="icons/team.png" />
                         <h2>Managable</h2>
                         <p>Keep track of your team anywhere and anytime. Paving the way for a truly remote working environment.</p>
                     </div>
 
                     <div>
-                        <img src="/icons/record.png" />
+                        <img src="icons/record.png" />
                         <h2>Attentive</h2>
                         <p>Making that yearly personell review obsolete: Know how your employees are and what you think of them. </p>
                     </div>
@@ -55,7 +55,7 @@ function Business() {
                         <p>Bring your remote workers right back into the office: Aletheia Impulse works well together. We know how important company culture is to you and your business, and we've made it our mission to help you address the challenges of remote employees. All for the sole reason of increasing your attractiveness as an employer. So are you ready to differentiate yourself from your competitors by setting new standards?</p>
                     </div>
                     <div className="col">
-                        <img src="/images/business.jpg" />
+                        <img src="images/business.jpg" />
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ function Business() {
                         </blockquote>
 
                         <div className={styles.block}>
-                            <img src="/images/person1.jpg" alt="Sebastian B." />
+                            <img src="images/person1.jpg" alt="Sebastian B." />
                             <aside>
                                 <h4>Sebastian B.</h4>
                                 <p>
@@ -86,7 +86,7 @@ function Business() {
                         </blockquote>
 
                         <div className={styles.block}>
-                            <img src="/images/person2.jpg" alt="Rachel F." />
+                            <img src="images/person2.jpg" alt="Rachel F." />
                             <aside>
                                 <h4>Rachel F.</h4>
                                 <p>
